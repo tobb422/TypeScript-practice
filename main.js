@@ -1,8 +1,8 @@
-var express = require("express");
+const Koa = require("koa");
+const app = new Koa();
 
-const app = express();
-
-const server = app.listen(3000, () => console.log("a"));
-app.get('/', function(req, res) {
-    res.send('hello world');
+app.use( ctx => {
+    ctx.body = "Hello Koa";
 });
+
+app.listen(3000);
