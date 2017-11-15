@@ -1,5 +1,5 @@
-import { PrintBanner } from './banner'
+import { PrintBanner, Print } from './banner'
 
-const p = new PrintBanner('Hello');
+const p: Print = new PrintBanner('Hello');
 p.printWeak();
 p.printStrong();

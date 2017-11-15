@@ -14,7 +14,7 @@ class Banner {
   }
 }
 
-abstract class Print {
+export abstract class Print {
   abstract printWeak(): void;
   abstract printStrong(): void;
 }
