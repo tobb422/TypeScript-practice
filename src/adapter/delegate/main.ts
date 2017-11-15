@@ -1,4 +1,4 @@
-import { Print, PrintBanner } from './banner'
+import { PrintBanner } from './banner'
 
 const p = new PrintBanner('Hello');
 p.printWeak();

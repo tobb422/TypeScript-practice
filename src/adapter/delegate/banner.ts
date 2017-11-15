@@ -15,23 +15,24 @@ class Banner {
 }
 
 abstract class Print {
-  printWeak(): void;
-  printStrong(): void;
+  abstract printWeak(): void;
+  abstract printStrong(): void;
 }
 
 export class PrintBanner extends Print {
   private banner: Banner
 
   constructor(text: string) {
+    super();
     this.banner = new Banner(text);
   }
 
   printWeak(): void {
-    banner.showWithParen();
+    this.banner.showWithParen();
   }
 
   printStrong(): void {
-    banner.showWithAster();
+    this.banner.showWithAster();
   }
 }
 
