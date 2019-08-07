@@ -1,3 +1,8 @@
+// literal types
+let user:  'a' | 'b' | 'c'
+user = 'o'
+
+
 // intersection types
 type AA = {
   aa: string
