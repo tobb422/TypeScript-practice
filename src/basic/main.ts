@@ -1,7 +1,6 @@
 // literal types
 let user:  'a' | 'b' | 'c'
-user = 'o'
-
+user = 'a'
 
 // intersection types
 type AA = {
