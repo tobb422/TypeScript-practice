@@ -1,5 +1,5 @@
 // literal types
-let user:  'a' | 'b' | 'c'
+let user: 'a' | 'b' | 'c'
 user = 'a'
 
 // intersection types
@@ -21,10 +21,10 @@ type B = {
   test: BB
 }
 
-type AB = A | B
+type AB = A & B
 
 let ab: AB = {
   a: 'string',
   b: true,
-  test: { aa: 'string' }
+  test: { aa: 'string', bb: true },
 }
