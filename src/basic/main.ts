@@ -21,9 +21,7 @@ type B = {
   test: BB
 }
 
-type AB = A & B
-
-let ab: AB = {
+let ab: A & B = {
   a: 'string',
   b: true,
   test: { aa: 'string', bb: true },
