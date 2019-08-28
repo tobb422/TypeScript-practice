@@ -1,5 +1,5 @@
 // literal types
-let user: 'a' | 'b' | 'c'
+let user: 'a' | 'c'
 user = 'a'
 
 // intersection types
