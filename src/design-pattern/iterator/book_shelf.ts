@@ -2,7 +2,7 @@ import Aggregate from './aggregate'
 import Iterator from './iterator'
 import Book from './book'
 
-export default class BookShelf implements Aggregate {
+export default class BookShelf implements Aggregate<Book> {
   private books: Book[]
 
   getBookAt(index: number) {

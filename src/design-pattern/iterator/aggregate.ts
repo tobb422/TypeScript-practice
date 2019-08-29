@@ -1,7 +1,7 @@
 import Iterator from './iterator'
 
-interface Aggregate {
-  iterator: () => Iterator
+interface Aggregate<T> {
+  iterator: () => Iterator<T>
 }
 
 export default Aggregate
