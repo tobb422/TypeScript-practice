@@ -22,10 +22,12 @@ export default class BookShelf implements Aggregate {
 class BookShelfIterator implements Iterator<Book> {
   private bookShelf: BookShelf
   private index: number
+
   constructor(bookShelf: BookShelf) {
     this.bookShelf = bookShelf
     this.index = 0
   }
+
   hasNext() {
     return this.index < this.bookShelf.getLength() - 1
   }
