@@ -1,5 +1,5 @@
 import { Product, Factory } from './factory'
-import { IDCard, IDCardFactory } from './idcard';
+import { IDCardFactory } from './idcard';
 
 const factory: Factory = new IDCardFactory();
 const card1: Product = factory.create("Taro");
